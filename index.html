@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="icon" type="image/png" href="./imgs/music.png">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img src="./imgs/music.png" alt="logo">
+        </a>
+        <h1>Audio <span> Player</span></h1>
+    </header>
+    <!-- MAIN  -->
+    <main class="container">
+
+        <input type="file" id="selector" name="selector" accept="audio/mp3, audio/mpeg">
+        <!-- PLAYER  -->
+        <div class="player">
+            <div class="now">Play Your Audio</div>
+
+            <progress value="0" max="100"></progress>
+
+            <div class="buttons">
+                <button class="play"><img src="./imgs/play.svg" alt="play"></button>
+                <button class="pause"><img src="./imgs/pause.svg" alt="pause"></button>
+                <button class="stop"><img src="./imgs/stop.svg" alt="stop"></button>
+            </div>
+            <input type="range" class="volume">
+        </div>
+
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
